@@ -23,16 +23,16 @@ function concatFiles(cb, ...srcFiles) {
         return cb(null, fileContentJoin);
       });
     }
-    
+
   }
-  
+
 }
 function writeToFile(dest, fileContent, cb) {
   writeFile(dest, fileContent, (err, res) => {
     if (err) {
       return err;
     }
-    return  res;
+    return res;
   });
 }
 concatFiles(
